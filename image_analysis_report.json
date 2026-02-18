@@ -1,0 +1,160 @@
+{
+  "summary": {
+    "total_images": 5,
+    "successful": 5,
+    "source_directory": "C:\\Users\\marek\\OneDrive\\Pulpit\\lena fotki",
+    "analysis_timestamp": "2026-02-18T11:38:37.045Z"
+  },
+  "images": [
+    {
+      "filename": "lena001.jpg",
+      "status": "success",
+      "dimensions": {
+        "width": 1800,
+        "height": 1200,
+        "display": "1800x1200"
+      },
+      "megapixels": 2.16,
+      "aspect_ratio": 1.5,
+      "aspect_ratio_display": "1800:1200",
+      "orientation": "Landscape",
+      "file_size": {
+        "kb": 55.23,
+        "bytes": 56555
+      },
+      "format": "JPEG",
+      "quality_assessment": "medium",
+      "recommended_uses": ["hero_banner", "featured_content_background", "medium_featured_image"],
+      "web_suitability": {
+        "hero_section": false,
+        "gallery_thumbnail": true,
+        "featured_image": true,
+        "mobile_optimized": true
+      }
+    },
+    {
+      "filename": "lena002.jpg",
+      "status": "success",
+      "dimensions": {
+        "width": 640,
+        "height": 960,
+        "display": "640x960"
+      },
+      "megapixels": 0.61,
+      "aspect_ratio": 0.67,
+      "aspect_ratio_display": "640:960",
+      "orientation": "Portrait",
+      "file_size": {
+        "kb": 38.56,
+        "bytes": 39489
+      },
+      "format": "JPEG",
+      "quality_assessment": "low",
+      "recommended_uses": [
+        "mobile_featured_image",
+        "testimonial_avatar",
+        "thumbnail",
+        "small_gallery"
+      ],
+      "web_suitability": {
+        "hero_section": false,
+        "gallery_thumbnail": true,
+        "featured_image": false,
+        "mobile_optimized": true
+      }
+    },
+    {
+      "filename": "lena003.jpg",
+      "status": "success",
+      "dimensions": {
+        "width": 1000,
+        "height": 667,
+        "display": "1000x667"
+      },
+      "megapixels": 0.67,
+      "aspect_ratio": 1.5,
+      "aspect_ratio_display": "1000:667",
+      "orientation": "Landscape",
+      "file_size": {
+        "kb": 46.32,
+        "bytes": 47432
+      },
+      "format": "JPEG",
+      "quality_assessment": "low",
+      "recommended_uses": [
+        "hero_banner",
+        "featured_content_background",
+        "thumbnail",
+        "small_gallery"
+      ],
+      "web_suitability": {
+        "hero_section": false,
+        "gallery_thumbnail": true,
+        "featured_image": true,
+        "mobile_optimized": true
+      }
+    },
+    {
+      "filename": "lena004.jpg",
+      "status": "success",
+      "dimensions": {
+        "width": 667,
+        "height": 1000,
+        "display": "667x1000"
+      },
+      "megapixels": 0.67,
+      "aspect_ratio": 0.67,
+      "aspect_ratio_display": "667:1000",
+      "orientation": "Portrait",
+      "file_size": {
+        "kb": 44.73,
+        "bytes": 45807
+      },
+      "format": "JPEG",
+      "quality_assessment": "low",
+      "recommended_uses": [
+        "mobile_featured_image",
+        "testimonial_avatar",
+        "thumbnail",
+        "small_gallery"
+      ],
+      "web_suitability": {
+        "hero_section": false,
+        "gallery_thumbnail": true,
+        "featured_image": false,
+        "mobile_optimized": true
+      }
+    },
+    {
+      "filename": "lena005.jpg",
+      "status": "success",
+      "dimensions": {
+        "width": 720,
+        "height": 960,
+        "display": "720x960"
+      },
+      "megapixels": 0.69,
+      "aspect_ratio": 0.75,
+      "aspect_ratio_display": "720:960",
+      "orientation": "Portrait",
+      "file_size": {
+        "kb": 26.29,
+        "bytes": 26920
+      },
+      "format": "JPEG",
+      "quality_assessment": "low",
+      "recommended_uses": [
+        "mobile_featured_image",
+        "testimonial_avatar",
+        "thumbnail",
+        "small_gallery"
+      ],
+      "web_suitability": {
+        "hero_section": false,
+        "gallery_thumbnail": true,
+        "featured_image": false,
+        "mobile_optimized": true
+      }
+    }
+  ]
+}

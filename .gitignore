@@ -1,0 +1,62 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+/test-results/
+
+# Next.js
+/.next/
+/out/
+/dist/
+
+# Production
+/build
+
+# Environment
+.env
+.env.local
+.env.*.local
+.env.production.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report
+/playwright/.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Photo Pipeline
+# NOTE: Optimized images in public/images/ ARE committed to the repo
+# NOTE: Source photos folder (Desktop/lenafotki) is NOT committed
+# This ensures reproducible builds with static images
+.cache
+
+# Vercel
+.vercel
+
+# Static assets that should be generated
+/public/sitemap.xml

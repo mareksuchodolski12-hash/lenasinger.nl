@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lena - Image Analysis for Website Sections</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 40px 20px;
+        min-height: 100vh;
+      }
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+      .header {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+      .header h1 {
+        color: #333;
+        margin-bottom: 10px;
+      }
+      .header p {
+        color: #666;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 25px;
+        margin-bottom: 40px;
+      }
+
+      .image-card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+        cursor: pointer;
+      }
+
+      .image-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      .image-container {
+        position: relative;
+        background: #f0f0f0;
+        height: 300px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .image-container img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+
+      .image-loading {
+        color: #999;
+        font-size: 14px;
+      }
+
+      .image-info {
+        padding: 20px;
+      }
+
+      .image-info h3 {
+        color: #333;
+        margin-bottom: 15px;
+        font-size: 18px;
+      }
+
+      .specs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        font-size: 13px;
+        color: #666;
+        margin-bottom: 15px;
+      }
+
+      .spec {
+        padding: 8px;
+        background: #f5f5f5;
+        border-radius: 5px;
+        border-left: 3px solid #667eea;
+      }
+
+      .spec strong {
+        color: #333;
+        display: block;
+      }
+
+      .note {
+        font-size: 13px;
+        color: #666;
+        padding: 10px;
+        background: #fff9e6;
+        border-left: 3px solid #ffc107;
+        border-radius: 3px;
+        margin-top: 10px;
+      }
+
+      .analysis-section {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .analysis-section h2 {
+        color: #333;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #667eea;
+        padding-bottom: 10px;
+      }
+
+      .section-assignment {
+        margin-bottom: 20px;
+        padding: 15px;
+        background: #f8f9fa;
+        border-left: 4px solid #667eea;
+        border-radius: 5px;
+      }
+
+      .section-assignment h4 {
+        color: #667eea;
+        margin-bottom: 10px;
+      }
+
+      .assignment-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .assignment-list li {
+        padding: 8px 0;
+        color: #555;
+        border-bottom: 1px solid #eee;
+      }
+
+      .assignment-list li:last-child {
+        border-bottom: none;
+      }
+
+      .quality-badge {
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      .quality-medium {
+        background: #fff3cd;
+        color: #856404;
+      }
+
+      .quality-low {
+        background: #f8d7da;
+        color: #721c24;
+      }
+
+      .instructions {
+        background: #e7f3ff;
+        border-left: 4px solid #667eea;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🎤 Lena - Photo Analysis for Website Sections</h1>
+        <p>Five JPEG images analyzed for optimal website placement</p>
+      </div>
+
+      <div class="instructions">
+        <strong>Instructions:</strong> Scroll through the images below to visually inspect them.
+        Consider orientation, lighting quality, professionalism, emotional intensity, stage
+        presence, and background quality when reviewing. The technical specifications and
+        recommended assignments are provided to guide your decisions.
+      </div>
+
+      <div class="gallery" id="gallery"></div>
+
+      <div class="analysis-section">
+        <h2>📊 Recommended Image Assignments</h2>
+
+        <div class="section-assignment">
+          <h4>🎬 HERO Section (1 strongest cinematic landscape photo)</h4>
+          <ul class="assignment-list">
+            <li>
+              <strong>Candidate 1:</strong> lena001.jpg (1800×1200px, Landscape, Only medium-quality
+              landscape option)
+            </li>
+            <li>
+              <strong>Candidate 2:</strong> lena003.jpg (1000×667px, Landscape, but very low
+              resolution)
+            </li>
+            <li><strong>Candidate 3:</strong> None - these are the only landscape options</li>
+          </ul>
+          <p>
+            <em
+              >⚠️ Note: Hero section requires horizontal orientation and dramatic lighting.
+              Recommend: <strong>lena001.jpg</strong> (only suitable landscape photo, though
+              resolution is limited).</em
+            >
+          </p>
+        </div>
+
+        <div class="section-assignment">
+          <h4>💭 ABOUT Section (1 intimate or emotional portrait)</h4>
+          <ul class="assignment-list">
+            <li><strong>lena002.jpg</strong> (640×960px, Portrait) - Consider for intimate feel</li>
+            <li>
+              <strong>lena004.jpg</strong> (667×1000px, Portrait) - Similar portrait orientation
+            </li>
+            <li><strong>lena005.jpg</strong> (720×960px, Portrait) - Slightly larger portrait</li>
+          </ul>
+          <p>
+            <em
+              >Recommend: <strong>One of lena004.jpg or lena005.jpg</strong> - Choose the one
+              showing the most emotional connection or intimate moment.</em
+            >
+          </p>
+        </div>
+
+        <div class="section-assignment">
+          <h4>🎪 SERVICES Section (2 professional-looking stage photos)</h4>
+          <ul class="assignment-list">
+            <li><strong>Recommended pair:</strong> Choose 2 from {lena002, lena004, lena005}</li>
+            <li>Look for: Professional pose, clear stage presence, good lighting</li>
+            <li>Prefer: Best dressed/positioned photos that show confidence</li>
+          </ul>
+          <p>
+            <em
+              >Recommendation: Select the 2 best-quality portrait shots showing strong stage
+              presence and professional appearance.</em
+            >
+          </p>
+        </div>
+
+        <div class="section-assignment">
+          <h4>🖼️ GALLERY Section (6–10 mixed dynamic shots)</h4>
+          <ul class="assignment-list">
+            <li>
+              <strong>All available images can be used</strong> - lena001, lena002, lena003,
+              lena004, lena005
+            </li>
+            <li>Gallery content can accommodate: mixed orientations, varied quality</li>
+            <li>
+              Note: With only 5 images, you'll need additional photos to fill a 6-10 image gallery
+            </li>
+          </ul>
+          <p>
+            <em
+              >Recommendation: Use all 5 images as a starting gallery while collecting more
+              dynamic/diverse shots.</em
+            >
+          </p>
+        </div>
+
+        <div class="section-assignment">
+          <h4>📸 PRESS KIT Section (1–2 high-resolution portraits)</h4>
+          <ul class="assignment-list">
+            <li><strong>Candidate 1:</strong> lena001.jpg (Highest resolution at 1800×1200px)</li>
+            <li>
+              <strong>Candidate 2:</strong> lena004.jpg or lena005.jpg (portrait orientation for
+              press kit)
+            </li>
+          </ul>
+          <p>
+            <em
+              >Note: Press kit typically requires professional, clean headshots. The available
+              images are limited in professional polish.</em
+            >
+          </p>
+        </div>
+
+        <div class="section-assignment" style="background: #fff3cd">
+          <h4>⚠️ QUALITY ASSESSMENT</h4>
+          <ul class="assignment-list">
+            <li>
+              ⭐ <strong>lena001.jpg:</strong> MEDIUM quality (2.16 MP) - Only suitable featured
+              image
+            </li>
+            <li>
+              ❌ lena002, lena003, lena004, lena005: LOW quality (&lt;1 MP) - Best for
+              thumbnails/galleries
+            </li>
+            <li>
+              <strong>Recommendation:</strong> Consider obtaining higher-resolution professional
+              photos for hero and press kit sections
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="analysis-section">
+        <h2>⚠️ Images to Exclude + Reasons</h2>
+        <p><strong>None recommended for exclusion at this time.</strong> However, be mindful of:</p>
+        <ul class="assignment-list">
+          <li>
+            <strong>For Hero section:</strong> Avoid lena003 if lena001 is available (better
+            resolution)
+          </li>
+          <li><strong>For Press Kit:</strong> Avoid low-quality images unless cropped/enhanced</li>
+          <li>
+            <strong>Overall:</strong> Collect higher-resolution photos for professional sections
+            (Hero, Press Kit, Services)
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      const images = [
+        {
+          name: 'lena001.jpg',
+          width: 1800,
+          height: 1200,
+          size: '55.23 KB',
+          megapixels: '2.16 MP',
+          orientation: 'Landscape',
+          quality: 'medium',
+          path: 'file:///C:/Users/marek/OneDrive/Pulpit/lena%20fotki/lena001.jpg',
+        },
+        {
+          name: 'lena002.jpg',
+          width: 640,
+          height: 960,
+          size: '38.56 KB',
+          megapixels: '0.61 MP',
+          orientation: 'Portrait',
+          quality: 'low',
+          path: 'file:///C:/Users/marek/OneDrive/Pulpit/lena%20fotki/lena002.jpg',
+        },
+        {
+          name: 'lena003.jpg',
+          width: 1000,
+          height: 667,
+          size: '46.32 KB',
+          megapixels: '0.67 MP',
+          orientation: 'Landscape',
+          quality: 'low',
+          path: 'file:///C:/Users/marek/OneDrive/Pulpit/lena%20fotki/lena003.jpg',
+        },
+        {
+          name: 'lena004.jpg',
+          width: 667,
+          height: 1000,
+          size: '44.73 KB',
+          megapixels: '0.67 MP',
+          orientation: 'Portrait',
+          quality: 'low',
+          path: 'file:///C:/Users/marek/OneDrive/Pulpit/lena%20fotki/lena004.jpg',
+        },
+        {
+          name: 'lena005.jpg',
+          width: 720,
+          height: 960,
+          size: '26.29 KB',
+          megapixels: '0.69 MP',
+          orientation: 'Portrait',
+          quality: 'low',
+          path: 'file:///C:/Users/marek/OneDrive/Pulpit/lena%20fotki/lena005.jpg',
+        },
+      ];
+
+      const gallery = document.getElementById('gallery');
+
+      images.forEach((img, idx) => {
+        const card = document.createElement('div');
+        card.className = 'image-card';
+
+        const qualityClass = img.quality === 'medium' ? 'quality-medium' : 'quality-low';
+        const qualityText = img.quality === 'medium' ? 'Medium Quality' : 'Low Quality';
+
+        card.innerHTML = `
+                <div class="image-container" id="container-${idx}">
+                    <img 
+                        src="${img.path}" 
+                        alt="${img.name}" 
+                        onerror="document.getElementById('container-${idx}').innerHTML = '<div class=image-loading>Image file path may need adjustment<br/>File: ${img.name}</div>'"
+                    />
+                </div>
+                <div class="image-info">
+                    <h3>${img.name}</h3>
+                    <div class="specs">
+                        <div class="spec">
+                            <strong>Dimensions</strong>
+                            ${img.width} × ${img.height}px
+                        </div>
+                        <div class="spec">
+                            <strong>Resolution</strong>
+                            ${img.megapixels}
+                        </div>
+                        <div class="spec">
+                            <strong>Orientation</strong>
+                            ${img.orientation}
+                        </div>
+                        <div class="spec">
+                            <strong>File Size</strong>
+                            ${img.size}
+                        </div>
+                    </div>
+                    <span class="quality-badge ${qualityClass}">${qualityText}</span>
+                    <div class="note">
+                        Click image to inspect details. Assess: lighting, emotional intensity, professionalism, stage presence, background quality.
+                    </div>
+                </div>
+            `;
+
+        gallery.appendChild(card);
+      });
+    </script>
+  </body>
+</html>
