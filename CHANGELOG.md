@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Security
+
+- **CRITICAL**: Fixed CVE-2026-0969 (HCSEC-2026-01) - Arbitrary code execution vulnerability in next-mdx-remote
+  - Updated `next-mdx-remote` from `^5.0.0` to `^6.0.0`
+  - Version 6.0.0 disables JavaScript expressions by default and provides protection against dangerous operations
+  - No code changes required as next-mdx-remote is not currently used in the codebase
+  - Reference: https://github.com/advisories (HCSEC-2026-01)
+
 ## [1.1.0] - 2024-01-25
 
 ### Phase 2: Client Optimization and Conversion Enhancement
