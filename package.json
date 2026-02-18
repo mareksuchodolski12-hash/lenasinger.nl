@@ -4,7 +4,7 @@
   "description": "Professional website for a local singer - weddings, events, workshops, and vocal coaching",
   "private": true,
   "engines": {
-    "node": "18.x || 20.x"
+    "node": ">=20 <23"
   },
   "scripts": {
     "dev": "next dev -H 0.0.0.0 -p 3002",
@@ -22,7 +22,8 @@
     "test:e2e:ui": "playwright test --ui",
     "type-check": "tsc --noEmit",
     "security-check": "npm audit --audit-level=moderate",
-    "import:photos": "node scripts/import-photos.mjs"
+    "import:photos": "node scripts/import-photos.mjs",
+    "check:vercel": "node scripts/vercel-preflight.mjs"
   },
   "dependencies": {
     "@mdx-js/react": "^3.0.0",
