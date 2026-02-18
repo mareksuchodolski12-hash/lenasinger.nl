@@ -1,0 +1,47 @@
+[
+  {
+    "id": "testimonial-1",
+    "author": "Sarah & Michael Clarke",
+    "role": "Wedding Clients",
+    "content": "Our wedding day was made even more special by the beautiful live performance. Every song was perfectly chosen for the moment, and the professionalism throughout was outstanding. We still get compliments from guests about the music!",
+    "rating": 5,
+    "date": "2024-05-20",
+    "type": "wedding"
+  },
+  {
+    "id": "testimonial-2",
+    "author": "Jennifer Martinez",
+    "role": "Event Coordinator, TechStart Inc",
+    "content": "Working with a true professional made our annual gala incredibly smooth. The vocal performances elevated the entire evening - exactly what we needed to impress clients and celebrate our team.",
+    "rating": 5,
+    "date": "2024-04-10",
+    "type": "corporate"
+  },
+  {
+    "id": "testimonial-3",
+    "author": "David Thompson",
+    "role": "Vocal Coaching Student",
+    "content": "I've been taking vocal coaching for 6 months, and the improvement in my technique and confidence is remarkable. Patient, encouraging, and genuinely invested in my progress. Highly recommend!",
+    "rating": 5,
+    "date": "2024-05-05",
+    "type": "coaching"
+  },
+  {
+    "id": "testimonial-4",
+    "author": "Emily Rodriguez",
+    "role": "Wedding Guest & Music Lover",
+    "content": "I had no idea that live performers could make such a difference at an event. The energy, the voice quality, the setlist - everything was perfect. Now I'm recommending this talented singer to everyone I know!",
+    "rating": 5,
+    "date": "2024-03-15",
+    "type": "wedding"
+  },
+  {
+    "id": "testimonial-5",
+    "author": "Robert Chen",
+    "role": "Workshop Participant",
+    "content": "Attended the jazz workshop and learned more in 3 hours than I expected. Clear explanations, hands-on practice, and great feedback. Already signed up for the next one!",
+    "rating": 5,
+    "date": "2024-04-28",
+    "type": "workshop"
+  }
+]

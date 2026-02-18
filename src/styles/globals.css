@@ -1,0 +1,308 @@
+/* src/styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Georgia:wght@400;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-dark-primary text-text-primary font-sans antialiased;
+  overflow-x: hidden;
+}
+
+/* Custom Utilities */
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.btn-primary {
+  @apply bg-accent-500 hover:bg-accent-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200;
+}
+
+.btn-primary-outline {
+  @apply border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white font-semibold py-3 px-8 rounded-lg transition-all duration-200;
+}
+
+.btn-secondary {
+  @apply bg-dark-secondary hover:bg-dark-tertiary text-text-primary font-semibold py-3 px-8 rounded-lg transition-colors duration-200;
+}
+
+.section-heading {
+  @apply text-4xl sm:text-5xl font-serif font-bold text-text-primary mb-4;
+}
+
+.section-subheading {
+  @apply text-xl text-text-secondary max-w-2xl;
+}
+
+.gradient-accent {
+  @apply bg-gradient-to-r from-accent-500 to-accent-700;
+}
+
+.card-dark {
+  @apply bg-dark-secondary rounded-lg p-6 border border-dark-tertiary hover:border-accent-500 transition-all duration-300;
+}
+
+.card-hover {
+  @apply hover:shadow-xl hover:shadow-accent-500/20 hover:scale-105 transition-all duration-300;
+}
+
+/* Animation utilities */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.slide-up {
+  animation: slideUp 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Form styles */
+input,
+textarea,
+select {
+  @apply bg-dark-secondary border border-dark-tertiary rounded-lg text-text-primary placeholder-text-muted;
+  @apply focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-transparent;
+  @apply transition-all duration-200;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 3.5px #1a1a1a inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2d2d2d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c67c4e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d99060;
+}
+
+/* Selection color */
+::selection {
+  @apply bg-accent-500 text-white;
+}
+
+/* Link hover effect */
+a {
+  @apply transition-colors duration-200;
+}
+
+/* Code blocks */
+code {
+  @apply bg-dark-secondary text-accent-500 rounded px-2 py-1 font-mono text-sm;
+}
+
+@layer components {
+  .social-hero-section {
+    @apply relative flex justify-center px-6 sm:px-8 lg:px-12;
+    padding-top: clamp(64px, 12vw, 112px);
+    padding-bottom: clamp(64px, 12vw, 112px);
+  }
+
+  .social-hero {
+    @apply relative flex w-full items-center justify-center overflow-hidden border border-white/10 backdrop-blur-sm;
+    max-width: 1200px;
+    border-radius: 32px;
+    min-height: 100vh;
+    min-height: 100svh;
+    background-image: url('/images/hear-lena-live.jpg');
+    background-size: cover;
+    background-position: 35% 55%;
+    background-repeat: no-repeat;
+    box-shadow: 0 48px 160px rgba(0, 0, 0, 0.45);
+  }
+
+  .social-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    background: radial-gradient(
+      circle at 74% 52%,
+      rgba(0, 0, 0, 0.55) 0%,
+      rgba(0, 0, 0, 0.38) 36%,
+      rgba(0, 0, 0, 0.14) 60%,
+      rgba(0, 0, 0, 0) 76%
+    );
+  }
+
+  @supports (min-height: 100dvh) {
+    .social-hero {
+      min-height: 100dvh;
+    }
+  }
+
+  .social-hero__overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(
+      180deg,
+      rgba(5, 5, 7, 0.64) 0%,
+      rgba(5, 5, 7, 0.28) 44%,
+      rgba(5, 5, 7, 0.7) 100%
+    );
+    box-shadow: inset 0 0 120px rgba(0, 0, 0, 0.48);
+    z-index: 1;
+  }
+
+  .social-hero__content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: inherit;
+    text-align: center;
+    padding-inline: clamp(16px, 3vw, 48px);
+  }
+
+  .social-hero__inner {
+    width: 100%;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: clamp(10px, 3.8vw, 56px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: clamp(32px, 6vw, 80px) clamp(24px, 5vw, 64px);
+    text-align: left;
+    transform: translateX(8vw);
+  }
+
+  .social-hero__eyebrow,
+  .social-hero__headline,
+  .social-hero__subheadline {
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.55);
+  }
+
+  .social-hero__actions {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 32rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .social-hero__actions {
+      flex-direction: row;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .social-hero__inner {
+      transform: translateX(4vw);
+    }
+  }
+
+  @media (max-width: 767px) {
+    .social-hero {
+      background-position: 45% 55%;
+    }
+
+    .social-hero__inner {
+      max-width: 640px;
+      margin: 0 auto;
+      transform: none;
+      align-items: center;
+      text-align: center;
+    }
+
+    .social-hero__actions {
+      justify-content: center;
+    }
+  }
+
+  /* Why Lena Section - Premium Card Styles */
+  .why-lena-card {
+    @apply relative flex h-full flex-col p-8 lg:p-10 rounded overflow-hidden;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.02) 100%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35) inset;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .why-lena-card:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 10px 30px rgba(0, 0, 0, 0.45),
+      0 0 0 1px rgba(198, 124, 78, 0.25),
+      0 0 0 1px rgba(0, 0, 0, 0.35) inset;
+  }
+
+  .why-lena-card__badge {
+    @apply flex items-center justify-center text-white font-bold text-lg;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    background: radial-gradient(
+      circle at 30% 30%,
+      rgba(198, 124, 78, 0.3),
+      rgba(198, 124, 78, 0.1)
+    );
+    border: 1px solid rgba(198, 124, 78, 0.5);
+    border-radius: 50%;
+    box-shadow:
+      0 2px 8px rgba(198, 124, 78, 0.15),
+      inset 0 1px 2px rgba(255, 255, 255, 0.1);
+  }
+
+  .why-lena-card__proof {
+    @apply text-xs md:text-sm font-medium;
+    color: rgba(255, 255, 255, 0.65);
+    margin-top: auto;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(198, 124, 78, 0.15);
+    letter-spacing: 0.3px;
+  }
+}

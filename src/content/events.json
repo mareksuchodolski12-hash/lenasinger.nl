@@ -1,0 +1,54 @@
+[
+  {
+    "id": "event-1",
+    "title": "Smith-Johnson Wedding Reception",
+    "date": "2024-06-15",
+    "time": "18:00",
+    "location": "Riverside Manor, Downtown",
+    "type": "wedding",
+    "description": "Live vocal performance for summer wedding reception. Elegant garden venue with 150 guests.",
+    "status": "upcoming"
+  },
+  {
+    "id": "event-2",
+    "title": "Corporate Gala - TechStart Inc",
+    "date": "2024-06-22",
+    "time": "19:30",
+    "location": "Downtown Convention Center",
+    "type": "corporate",
+    "description": "Annual company gala with 300+ attendees. Jazz and contemporary performance.",
+    "status": "upcoming"
+  },
+  {
+    "id": "event-3",
+    "title": "Summer Music Festival Performance",
+    "date": "2024-07-10",
+    "time": "20:00",
+    "location": "Central Park Amphitheater",
+    "type": "festival",
+    "description": "Free community concert as part of annual summer music festival. Mixed repertoire.",
+    "status": "upcoming",
+    "bookingUrl": "https://example.com/festival"
+  },
+  {
+    "id": "event-4",
+    "title": "Vocal Coaching Workshop - Intermediate Level",
+    "date": "2024-06-28",
+    "time": "14:00",
+    "location": "Music Studio - Midtown",
+    "type": "workshop",
+    "description": "3-hour group workshop focusing on breath control and song interpretation techniques.",
+    "status": "upcoming",
+    "bookingUrl": "https://example.com/workshops"
+  },
+  {
+    "id": "event-5",
+    "title": "Live Concert - Jazz Night",
+    "date": "2024-07-05",
+    "time": "21:00",
+    "location": "The Blue Note Club",
+    "type": "concert",
+    "description": "Intimate live performance of jazz standards and contemporary jazz arrangements.",
+    "status": "upcoming"
+  }
+]

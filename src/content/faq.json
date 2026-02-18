@@ -1,0 +1,110 @@
+[
+  {
+    "id": "faq-1",
+    "question": "How do I book you for my wedding?",
+    "answer": "Contact us through the website form or call to discuss your specific needs, date, and budget. We'll schedule a consultation to review your venue, guest count, and music preferences. Once details are confirmed, we'll send a proposal and contract.",
+    "category": "Booking"
+  },
+  {
+    "id": "faq-2",
+    "question": "Do you provide sound equipment?",
+    "answer": "Yes, professional sound system and microphone equipment are included in all wedding and corporate event packages. We handle all technical setup and coordination with your venue.",
+    "category": "Events"
+  },
+  {
+    "id": "faq-3",
+    "question": "What is your cancellation policy?",
+    "answer": "Cancellations made more than 30 days before the event receive a full refund. Between 14-30 days: 50% refund. Less than 14 days: non-refundable. Weather-related postponements are accommodated without penalty.",
+    "category": "Policy"
+  },
+  {
+    "id": "faq-4",
+    "question": "Can I request specific songs for my event?",
+    "answer": "Absolutely! Customizing the setlist to match your event's vibe is part of my service. We'll discuss your preferences during the consultation and build a setlist that works perfectly for your occasion.",
+    "category": "Services"
+  },
+  {
+    "id": "faq-5",
+    "question": "Do you offer lessons online or only in-person?",
+    "answer": "Both! Vocal coaching is available for in-person lessons at my studio or online via video call. Both options are equally effective - choose what works best for your schedule.",
+    "category": "Coaching"
+  },
+  {
+    "id": "faq-6",
+    "question": "What genres do you specialize in?",
+    "answer": "I perform a wide range including pop, jazz, R&B, soul, classical, and contemporary music. My training covers multiple genres, so I can tailor performances to your event's atmosphere.",
+    "category": "Repertoire"
+  },
+  {
+    "id": "faq-7",
+    "question": "How far in advance should I book?",
+    "answer": "For weddings and corporate events, 2-3 months is ideal to secure your preferred date. However, we can often accommodate bookings with less notice depending on availability. Contact us to check!",
+    "category": "Booking"
+  },
+  {
+    "id": "faq-8",
+    "question": "Are there group discounts for workshops?",
+    "answer": "Yes! Group bookings of 4 or more participants receive a 15% discount on workshop rates. Contact us for custom group pricing.",
+    "category": "Workshops"
+  },
+  {
+    "id": "faq-9",
+    "question": "What makes hiring a live singer better than using a DJ or recorded music?",
+    "answer": "Live singing creates an irreplaceable emotional connection with your guests. A professional vocalist adds elegance, sophistication, and personal touch that recorded music cannot match. Studies show live music increases guest engagement and creates lasting memories.",
+    "category": "Services"
+  },
+  {
+    "id": "faq-10",
+    "question": "How long are typical performances?",
+    "answer": "Wedding ceremonies: 15-30 minutes. Cocktail hours: 45 minutes to 1 hour. Reception performances: 2-4 hours with breaks. Corporate events: Customized based on event duration. Exact timing is discussed during consultation.",
+    "category": "Events"
+  },
+  {
+    "id": "faq-11",
+    "question": "What if my venue doesn't have sound equipment - can you still perform?",
+    "answer": "Yes! I can provide professional-grade portable sound equipment suitable for any venue - from intimate restaurants to large wedding halls. Equipment rental is included in most packages. We assess your specific venue during consultation.",
+    "category": "Technical"
+  },
+  {
+    "id": "faq-12",
+    "question": "How much does vocal coaching cost and how long do lessons last?",
+    "answer": "Coaching sessions are $75/hour for individual lessons ($60/hour for 10-session packages). Sessions cover technique, breathing, performance skills, and song interpretation. Most students start with weekly or bi-weekly lessons and adjust as needed.",
+    "category": "Coaching"
+  },
+  {
+    "id": "faq-13",
+    "question": "Can you help me prepare for auditions or competitions?",
+    "answer": "Absolutely! Audition preparation is one of my specialties. I provide coaching on song selection, performance technique, managing nerves, and maximizing your best qualities. Most students see significant improvement within 4-6 weeks of dedicated preparation.",
+    "category": "Coaching"
+  },
+  {
+    "id": "faq-14",
+    "question": "What's your experience performing at corporate events?",
+    "answer": "I've performed at 150+ corporate events including product launches, holiday parties, awards ceremonies, and client appreciation events. I understand corporate timelines, coordinate with event planners, and deliver polished performances that impress clients and employees alike.",
+    "category": "Corporate"
+  },
+  {
+    "id": "faq-15",
+    "question": "Do you perform with backing tracks or live band?",
+    "answer": "I primarily perform with professional backing tracks that I carefully curate for each event. I can also arrange live band performances (piano, guitar, drums, etc.) for additional cost. We discuss the best option based on your event size and venue.",
+    "category": "Performance"
+  },
+  {
+    "id": "faq-16",
+    "question": "What if I need to reschedule my event after booking?",
+    "answer": "Life happens! We're flexible with rescheduling within reason. Requests made 30+ days before your event are typically accommodated at no additional charge. Within 30 days, a rescheduling fee of $150 applies depending on circumstances.",
+    "category": "Policy"
+  },
+  {
+    "id": "faq-17",
+    "question": "How many songs can you perform in a typical set?",
+    "answer": "A professional set typically includes 15-20 songs per hour depending on song length and any special requests. For weddings, I work with you to pace the music throughout ceremony, cocktail, and reception portions. Most clients appreciate a balanced mix of classics and contemporary hits.",
+    "category": "Services"
+  },
+  {
+    "id": "faq-18",
+    "question": "What do you need from me to get started?",
+    "answer": "Just three things: 1) Your preferred date and event type, 2) Venue details and expected guest count, 3) Music preferences and any special requests. I'll guide you through the rest. Initial consultation is complimentary - no obligation.",
+    "category": "Booking"
+  }
+]

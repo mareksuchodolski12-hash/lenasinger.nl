@@ -1,0 +1,39 @@
+{
+  "featured": [
+    {
+      "galleryId": "hero-1",
+      "src": "/images/hero/hero-1.svg",
+      "alt": "Professional Live Performance - Singer on Stage",
+      "title": "Premium Vocal Performance",
+      "orientation": "portrait"
+    }
+  ],
+  "gallery": [
+    {
+      "galleryId": "gallery-1",
+      "src": "/images/gallery/gallery-1.svg",
+      "alt": "Stage Performance with Professional Lighting",
+      "title": "Live Concert Performance",
+      "orientation": "portrait"
+    },
+    {
+      "galleryId": "gallery-2",
+      "src": "/images/square/square-1.svg",
+      "alt": "Vocalist with Microphone",
+      "title": "Professional Vocalist",
+      "orientation": "portrait"
+    }
+  ],
+  "square": [
+    {
+      "galleryId": "square-1",
+      "src": "/images/square/square-1.svg",
+      "alt": "Live Vocal Performance"
+    }
+  ],
+  "metadata": {
+    "importedAt": "2026-02-18T00:00:00Z",
+    "sourceFolder": "/images",
+    "totalCount": 2
+  }
+}

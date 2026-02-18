@@ -1,0 +1,56 @@
+<svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Background -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="spotLight" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:0" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%">
+      <stop offset="0%" style="stop-color:#ffd60a;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="url(#bgGrad)"/>
+
+  <!-- Spotlight effect -->
+  <circle cx="800" cy="200" r="600" fill="url(#spotLight)" opacity="0.3"/>
+  <ellipse cx="800" cy="450" rx="700" ry="400" fill="url(#glow)" opacity="0.2"/>
+
+  <!-- Stage -->
+  <rect x="200" y="500" width="1200" height="400" fill="#0a0a0a" opacity="0.5" rx="20"/>
+
+  <!-- Microphone stand -->
+  <line x1="800" y1="150" x2="800" y2="550" stroke="#d4af37" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="800" cy="130" r="25" fill="#d4af37"/>
+  <ellipse cx="800" cy="560" rx="35" ry="15" fill="#666"/>
+
+  <!-- Singer silhouette -->
+  <ellipse cx="800" cy="320" rx="100" ry="140" fill="#e94560" opacity="0.9"/>
+
+  <!-- Head -->
+  <circle cx="800" cy="180" r="55" fill="#f5a962"/>
+
+  <!-- Arm with microphone -->
+  <path d="M 750 280 Q 700 250 680 190" stroke="#f5a962" stroke-width="35" fill="none" stroke-linecap="round"/>
+
+  <!-- Other arm -->
+  <path d="M 850 280 Q 900 300 920 350" stroke="#e94560" stroke-width="35" fill="none" stroke-linecap="round"/>
+
+  <!-- Decorative music notes -->
+  <text x="150" y="200" font-size="80" fill="#e94560" opacity="0.4">♪</text>
+  <text x="1350" y="300" font-size="100" fill="#d4af37" opacity="0.3">♫</text>
+
+  <!-- Text -->
+  <text x="800" y="750" font-size="48" font-family="serif" font-weight="bold" fill="#d4af37" text-anchor="middle">
+    Professional Vocalist
+  </text>
+  <text x="800" y="820" font-size="28" fill="#e94560" text-anchor="middle" opacity="0.8">
+    Live Performance &amp; Entertainment
+  </text>
+</svg>

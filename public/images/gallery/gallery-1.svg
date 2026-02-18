@@ -1,0 +1,57 @@
+<svg viewBox="0 0 1200 1500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="galleryBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f3460;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="galleryLight" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#d4af37;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1500" fill="url(#galleryBg)"/>
+  <ellipse cx="600" cy="400" rx="800" ry="600" fill="url(#galleryLight)" opacity="0.3"/>
+
+  <!-- Stage spotlight -->
+  <circle cx="600" cy="300" r="400" fill="#e94560" opacity="0.15"/>
+
+  <!-- Performer silhouette - centered, portrait oriented -->
+  <ellipse cx="600" cy="650" rx="180" ry="280" fill="#e94560" opacity="0.85"/>
+
+  <!-- Head -->
+  <circle cx="600" cy="280" r="90" fill="#f5a962"/>
+
+  <!-- Raised arm with microphone -->
+  <path d="M 500 400 Q 350 250 320 150" stroke="#f5a962" stroke-width="50" fill="none" stroke-linecap="round"/>
+
+  <!-- Microphone -->
+  <circle cx="320" cy="140" r="35" fill="#d4af37"/>
+  <rect x="305" y="175" width="30" height="80" fill="#d4af37"/>
+
+  <!-- Other arm -->
+  <path d="M 700 400 Q 850 500 880 650" stroke="#e94560" stroke-width="50" fill="none" stroke-linecap="round"/>
+
+  <!-- Dress/outfit detail -->
+  <ellipse cx="600" cy="750" rx="150" ry="180" fill="#1a1a2e" opacity="0.6"/>
+
+  <!-- Shine/highlight on body -->
+  <ellipse cx="550" cy="600" rx="60" ry="120" fill="#f5a962" opacity="0.2"/>
+
+  <!-- Music notes floating -->
+  <text x="200" y="400" font-size="120" fill="#d4af37" opacity="0.25">♪</text>
+  <text x="950" y="600" font-size="140" fill="#e94560" opacity="0.2">♫</text>
+  <text x="150" y="900" font-size="100" fill="#d4af37" opacity="0.15">♪</text>
+
+  <!-- Stage floor indicator -->
+  <ellipse cx="600" cy="950" rx="250" ry="80" fill="#d4af37" opacity="0.2"/>
+
+  <!-- Decorative bottom border -->
+  <rect x="0" y="1400" width="1200" height="100" fill="#d4af37" opacity="0.1"/>
+  
+  <!-- Text overlay -->
+  <text x="600" y="1350" font-size="52" font-family="serif" font-weight="bold" fill="#d4af37" text-anchor="middle" opacity="0.9">
+    Live Performance
+  </text>
+</svg>

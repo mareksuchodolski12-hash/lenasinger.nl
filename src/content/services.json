@@ -1,0 +1,86 @@
+[
+  {
+    "id": "weddings",
+    "title": "Wedding Ceremonies & Receptions",
+    "slug": "weddings",
+    "description": "Premium live entertainment for your perfect wedding day",
+    "longDescription": "Make your wedding day unforgettable with custom-selected music for ceremony, cocktail hour, and reception. I specialize in romantic ballads, contemporary hits, and timeless classics performed live.",
+    "icon": "💍",
+    "price": "Contact for custom quote",
+    "duration": "Flexible arrangements",
+    "features": [
+      "Ceremony music (processional, vows, recessional)",
+      "Cocktail hour entertainment",
+      "Reception performance",
+      "Custom song selections",
+      "Sound system & equipment included",
+      "Professional staging & lighting coordination"
+    ],
+    "includes": [
+      "Pre-wedding consultation",
+      "Technical rehearsal",
+      "Full performance setup",
+      "Backup equipment",
+      "Professional presentation",
+      "Flexible timing for your schedule"
+    ],
+    "cta": "Book Your Wedding Performance",
+    "image": "wedding-performance"
+  },
+  {
+    "id": "corporate-events",
+    "title": "Corporate Events & Conferences",
+    "slug": "corporate-events",
+    "description": "Elevate your corporate gathering with live vocal entertainment",
+    "longDescription": "From gala dinners to product launches, I provide sophisticated live entertainment that creates the perfect atmosphere for your corporate event. Professional, elegant, and entirely customizable.",
+    "icon": "🎤",
+    "price": "Contact for custom quote",
+    "duration": "30 min - 3 hours",
+    "features": [
+      "Background dinner music",
+      "Live performance sets",
+      "Jazz & sophisticated standards",
+      "Contemporary & pop selections",
+      "Full technical support",
+      "Professional MC services available"
+    ],
+    "includes": [
+      "Event consultation & planning",
+      "Customized setlist",
+      "Professional sound & lighting",
+      "Coordination with your venue",
+      "Backup accompaniment track",
+      "Flexible performance formats"
+    ],
+    "cta": "Inquire About Your Event",
+    "image": "corporate-event"
+  },
+  {
+    "id": "workshops",
+    "title": "Vocal Coaching & Singing Workshops",
+    "slug": "workshops",
+    "description": "Expert vocal training and group workshops for all levels",
+    "longDescription": "Develop your singing technique with personalized coaching or learn with peers in group workshops. All levels welcome, from beginners to advanced singers preparing for performances.",
+    "icon": "🎵",
+    "price": "Starting at $50/session",
+    "duration": "45-90 minutes",
+    "features": [
+      "One-on-one vocal coaching",
+      "Group workshop sessions",
+      "Technique & breathing exercises",
+      "Song interpretation & performance tips",
+      "Performance anxiety coaching",
+      "Recording & playback analysis"
+    ],
+    "includes": [
+      "Personalized assessment",
+      "Custom exercise plans",
+      "Sheet music & resources",
+      "Flexible scheduling",
+      "Online & in-person options",
+      "Performance preparation support"
+    ],
+    "cta": "Schedule Your First Session",
+    "image": "vocal-coaching"
+  }
+]

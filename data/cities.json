@@ -1,0 +1,296 @@
+{
+  "metadata": {
+    "primary_city": "Eindhoven",
+    "primary_region": "North Brabant",
+    "country": "Netherlands",
+    "service_radius_km": 40,
+    "last_updated": "2024-02-18",
+    "total_cities": 23,
+    "coordinates": {
+      "primary": {
+        "lat": 51.4416,
+        "lng": 5.4697,
+        "city": "Eindhoven"
+      }
+    }
+  },
+  "cities": [
+    {
+      "name": "Veldhoven",
+      "slug": "veldhoven",
+      "distance_km": 5,
+      "type": "town",
+      "region": "North Brabant",
+      "population": 35000,
+      "seo_priority": 1,
+      "notes": "Residential suburb, high-income demographics"
+    },
+    {
+      "name": "Best",
+      "slug": "best",
+      "distance_km": 8,
+      "type": "town",
+      "region": "North Brabant",
+      "population": 29000,
+      "seo_priority": 1,
+      "notes": "Industrial/residential mix, growing event venues"
+    },
+    {
+      "name": "Nuenen",
+      "slug": "nuenen",
+      "distance_km": 8,
+      "type": "town",
+      "region": "North Brabant",
+      "population": 22000,
+      "seo_priority": 1,
+      "notes": "Van Gogh heritage, cultural events"
+    },
+    {
+      "name": "Geldrop",
+      "slug": "geldrop",
+      "distance_km": 10,
+      "type": "town",
+      "region": "North Brabant",
+      "population": 31000,
+      "seo_priority": 1,
+      "notes": "Affluent suburb, premium wedding market"
+    },
+    {
+      "name": "Helmond",
+      "slug": "helmond",
+      "distance_km": 13,
+      "type": "major_city",
+      "region": "North Brabant",
+      "population": 87000,
+      "seo_priority": 2,
+      "notes": "Second-largest city in region, corporate events, design industry"
+    },
+    {
+      "name": "Waalre",
+      "slug": "waalre",
+      "distance_km": 12,
+      "type": "town",
+      "region": "North Brabant",
+      "population": 17000,
+      "seo_priority": 1,
+      "notes": "High-income residential, premium market"
+    },
+    {
+      "name": "Son en Breugel",
+      "slug": "son-en-breugel",
+      "distance_km": 18,
+      "type": "town",
+      "region": "North Brabant",
+      "population": 17000,
+      "seo_priority": 2,
+      "notes": "Commuter town, event venues"
+    },
+    {
+      "name": "Waalwijk",
+      "slug": "waalwijk",
+      "distance_km": 22,
+      "type": "town",
+      "region": "North Brabant",
+      "population": 46000,
+      "seo_priority": 2,
+      "notes": "Industrial heritage, growing events market"
+    },
+    {
+      "name": "Valkenswaard",
+      "slug": "valkenswaard",
+      "distance_km": 17,
+      "type": "town",
+      "region": "North Brabant",
+      "population": 30000,
+      "seo_priority": 2,
+      "notes": "Agricultural area, increasing premium events"
+    },
+    {
+      "name": "Oirschot",
+      "slug": "oirschot",
+      "distance_km": 20,
+      "type": "town",
+      "region": "North Brabant",
+      "population": 13000,
+      "seo_priority": 1,
+      "notes": "Rural charm, destination weddings"
+    },
+    {
+      "name": "Bladel",
+      "slug": "bladel",
+      "distance_km": 22,
+      "type": "town",
+      "region": "North Brabant",
+      "population": 19000,
+      "seo_priority": 2,
+      "notes": "Small town, local event market"
+    },
+    {
+      "name": "Beek en Donk",
+      "slug": "beek-en-donk",
+      "distance_km": 19,
+      "type": "town",
+      "region": "North Brabant",
+      "population": 13000,
+      "seo_priority": 2,
+      "notes": "Village context, local market"
+    },
+    {
+      "name": "Eersel",
+      "slug": "eersel",
+      "distance_km": 18,
+      "type": "town",
+      "region": "North Brabant",
+      "population": 18500,
+      "seo_priority": 2,
+      "notes": "Heathland region, nature-focused events"
+    },
+    {
+      "name": "Reusel-De Fren",
+      "slug": "reusel-de-fren",
+      "distance_km": 24,
+      "type": "town",
+      "region": "North Brabant",
+      "population": 13000,
+      "seo_priority": 3,
+      "notes": "Southern region, smaller market"
+    },
+    {
+      "name": "Weert",
+      "slug": "weert",
+      "distance_km": 25,
+      "type": "major_city",
+      "region": "Limburg",
+      "population": 49000,
+      "seo_priority": 2,
+      "notes": "Cross-regional reach, tech/manufacturing sector"
+    },
+    {
+      "name": "Boxtel",
+      "slug": "boxtel",
+      "distance_km": 26,
+      "type": "town",
+      "region": "North Brabant",
+      "population": 31000,
+      "seo_priority": 2,
+      "notes": "Growing industrial, event capacity"
+    },
+    {
+      "name": "Tilburg",
+      "slug": "tilburg",
+      "distance_km": 30,
+      "type": "major_city",
+      "region": "North Brabant",
+      "population": 225000,
+      "seo_priority": 3,
+      "notes": "Largest regional city (after Eindhoven), tech hubs, fashion, large venues"
+    },
+    {
+      "name": "Veghel",
+      "slug": "veghel",
+      "distance_km": 28,
+      "type": "town",
+      "region": "North Brabant",
+      "population": 35000,
+      "seo_priority": 2,
+      "notes": "Industrial/commercial, corporate events"
+    },
+    {
+      "name": "Uden",
+      "slug": "uden",
+      "distance_km": 32,
+      "type": "town",
+      "region": "North Brabant",
+      "population": 42000,
+      "seo_priority": 3,
+      "notes": "Gateway to north, growing market"
+    },
+    {
+      "name": "'s-Hertogenbosch",
+      "slug": "s-hertogenbosch",
+      "distance_km": 35,
+      "type": "major_city",
+      "region": "North Brabant",
+      "population": 160000,
+      "seo_priority": 3,
+      "notes": "Capital of North Brabant, historic, premium events, large institutions"
+    },
+    {
+      "name": "Sint-Oedenrode",
+      "slug": "sint-oedenrode",
+      "distance_km": 26,
+      "type": "town",
+      "region": "North Brabant",
+      "population": 4000,
+      "seo_priority": 1,
+      "notes": "Small village, local/rural weddings"
+    },
+    {
+      "name": "Lieshout",
+      "slug": "lieshout",
+      "distance_km": 28,
+      "type": "town",
+      "region": "North Brabant",
+      "population": 9000,
+      "seo_priority": 2,
+      "notes": "Poultry/agricultural hub, local events"
+    },
+    {
+      "name": "Cranendonck",
+      "slug": "cranendonck",
+      "distance_km": 21,
+      "type": "town",
+      "region": "North Brabant",
+      "population": 21000,
+      "seo_priority": 2,
+      "notes": "Merged municipality, growing event market"
+    }
+  ],
+  "categories": {
+    "major_city": ["Helmond", "Tilburg", "'s-Hertogenbosch", "Weert"],
+    "town": [
+      "Veldhoven",
+      "Best",
+      "Nuenen",
+      "Geldrop",
+      "Waalre",
+      "Valkenswaard",
+      "Oirschot",
+      "Bladel",
+      "Beek en Donk",
+      "Eersel",
+      "Reusel-De Fren",
+      "Boxtel",
+      "Veghel",
+      "Uden",
+      "Sint-Oedenrode",
+      "Lieshout",
+      "Cranendonck",
+      "Son en Breugel",
+      "Waalwijk"
+    ],
+    "venue_hub": ["Eindhoven", "Helmond", "Tilburg", "'s-Hertogenbosch", "Waalwijk", "Boxtel"]
+  },
+  "seo_tiers": {
+    "tier_1_immediate": ["Veldhoven", "Best", "Nuenen", "Geldrop", "Waalre", "Helmond"],
+    "tier_2_phase_1": [
+      "Valkenswaard",
+      "Son en Breugel",
+      "Waalwijk",
+      "Oirschot",
+      "Bladel",
+      "Eersel",
+      "Beek en Donk"
+    ],
+    "tier_3_phase_2": [
+      "Reusel-De Fren",
+      "Weert",
+      "Boxtel",
+      "Veghel",
+      "Lieshout",
+      "Sint-Oedenrode",
+      "Cranendonck"
+    ],
+    "tier_4_expansion": ["Tilburg", "Uden", "'s-Hertogenbosch"]
+  }
+}
