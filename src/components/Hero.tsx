@@ -15,15 +15,15 @@ export function Hero() {
   };
 
   return (
-    <section className="relative h-screen flex items-end justify-start overflow-hidden pt-20">
+    <section className="relative h-screen sm:h-screen flex items-end justify-start overflow-hidden pt-20 min-h-[70vh] md:min-h-screen">
       {/* Background Image */}
       <Image
         src="/images/lena/lena003.jpg"
         alt="Lena - Singer"
         fill
         priority
-        sizes="100vw"
-        className="object-cover z-0"
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
+        className="object-cover z-0 object-center"
       />
 
       {/* Backdrop Blur Overlay */}
@@ -39,19 +39,19 @@ export function Hero() {
       <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-dark-primary/90 via-dark-primary/50 to-transparent z-10" />
 
       {/* Content */}
-      <div className="relative px-6 sm:px-8 lg:px-12 pb-16 lg:pb-20 max-w-3xl w-full z-20">
+      <div className="relative px-4 sm:px-6 md:px-8 lg:px-12 pb-12 sm:pb-16 lg:pb-20 max-w-3xl w-full z-20">
         {/* Eyebrow */}
-        <div className="text-sm font-semibold uppercase letter-spacing-widest text-accent-500 mb-4">
+        <div className="text-xs sm:text-sm font-semibold uppercase letter-spacing-widest text-accent-500 mb-3 sm:mb-4">
           {siteContent.hero.eyebrow}
         </div>
 
         {/* Headline */}
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-text-primary mb-6 leading-tight max-w-2xl">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary mb-4 sm:mb-6 leading-tight max-w-2xl">
           {siteContent.hero.headline}
         </h1>
 
         {/* Subheadline */}
-        <p className="text-lg sm:text-xl text-text-secondary mb-10 leading-relaxed max-w-xl">
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-text-secondary mb-6 sm:mb-10 leading-relaxed max-w-xl">
           {siteContent.hero.subheadline}
         </p>
 
