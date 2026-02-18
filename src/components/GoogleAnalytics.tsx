@@ -1,9 +1,8 @@
 // src/components/GoogleAnalytics.tsx
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, Suspense } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { Suspense } from 'react';
 
 declare global {
   interface Window {
@@ -19,7 +18,8 @@ function GoogleAnalyticsTracker({ gaId }: { gaId: string }) {
   useEffect(() => {
     if (!gaId) return;
 
-    const url = pathname + (searchParams ? searchParams.toString() : '');
+    const searchString = searchParams?.toString();
+    const url = searchString ? `${pathname}?${searchString}` : pathname;
 
     // Track pageview
     window.gtag?.('config', gaId, {
