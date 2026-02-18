@@ -21,6 +21,12 @@ jobs:
       - name: Install
         run: npm ci
 
+# codex/fix-vercel-404-error-and-stabilize-deploy-o9hcum
+      - name: Vercel preflight
+        run: npm run check:vercel
+
+=======
+# main
       - name: Test
         run: npm test
 
