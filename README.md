@@ -13,6 +13,8 @@ A production-grade Next.js website for a professional vocalist specializing in w
 - **Performance Focused**: Lighthouse 90+, Core Web Vitals optimized
 - **Dark Theme**: Elegant design with premium accent color
 - **Mobile Responsive**: Full mobile and tablet support
+- **Google Analytics Integration**: Track visitors and conversions with GA4
+- **MCP Server Support**: Query analytics data with AI assistants (Claude, etc.)
 
 ## 🚀 Quick Start
 
@@ -167,7 +169,28 @@ CONTACT_EMAIL_FROM=noreply@yoursite.com
 
 # SEO Verification (Optional)
 NEXT_PUBLIC_GOOGLE_VERIFICATION=your-google-id
+
+# Google Analytics (Optional)
+NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 ```
+
+### Google Analytics MCP Server
+
+This project includes integration with the Google Analytics MCP (Model Context Protocol) server, which allows AI assistants like Claude to query and analyze your website's analytics data in real-time.
+
+**Quick Setup:**
+
+1. Install dependencies: `npm install` (MCP server already included)
+2. Set up Google Cloud service account with Analytics Data API access
+3. Configure Claude Desktop or other MCP client
+4. Query your analytics data using natural language!
+
+**Full documentation:** See [GOOGLE_ANALYTICS_MCP.md](./GOOGLE_ANALYTICS_MCP.md) for complete setup instructions.
+
+**Example queries:**
+- "Show me traffic for the last 7 days"
+- "What are my top pages?"
+- "How many contact form submissions this month?"
 
 ## 🧪 Testing
 

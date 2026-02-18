@@ -60,3 +60,7 @@ Thumbs.db
 
 # Static assets that should be generated
 /public/sitemap.xml
+
+# Google Analytics MCP - Credentials
+*-service-account.json
+claude_desktop_config.json
